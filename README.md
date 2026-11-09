@@ -22,3 +22,9 @@ Local Release upload was attempted and rejected with HTTP401 at uploads.github.c
 - [Official first-time enablement permission](https://github.com/actions/configure-pages/blob/v5/action.yml)
 
 The intended public address is https://yyvape-dev.github.io/SA2-TD/ . It is not confirmed live until the deployment log and public HTTP/browser tests are recorded. No new story, rewards, finalized art, account login or automatic telemetry submission are added.
+
+## Current execution evidence (2026-11-09 JST)
+
+[First deployment run](https://github.com/yyvape-dev/SA2-TD/actions/runs/42563853224): pinned source checkout, official engine/templates, Web build and full manifest validation all **PASS**. `configure-pages` **FAIL** because this repository has not yet been enabled for Pages. Upload/deploy were skipped. Full workflow is therefore not PASS. Evidence is retained under `evidence/`.
+
+The owner needs to select **GitHub Actions** as Source in [SA2-TD Pages settings](https://github.com/yyvape-dev/SA2-TD/settings/pages). Publication is already authorized; after the setting is enabled, dispatch `pages.yml` again. No new approval or changes to existing SA/main are needed. Public reachability/browser/device acceptance are still NOT TESTED.
